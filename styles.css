@@ -1,37 +1,76 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  /* Colors*/
+
+/* Primary*/
+ --Cyan: hsl(179, 62%, 43%);
+ --Bright-Yellow: hsl(71, 73%, 54%);
+
+/* Neutral*/
+ --Light-Gray: hsl(204, 43%, 93%);
+ --Grayish-Blue: hsl(218, 22%, 67%);
+
+ /*Typography*/
+ --Font-size: 16px;
+ --Font-Family: "Karla" , cursive;
+ --Font-weights1: 400;
+ --Font-weights2: 700;
+}
+
+body{
+  background-color: var(--Light-Gray);
+  height: 100vh;
+  width: 100vw;
+  font-size: var(--Font-size);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 20% 76% 20%;
+  font-family: var(--Font-Family);
+  
+}
+
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 40px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 10px;
+  box-shadow: -1px -1px 20px var(--Grayish-Blue);
   }
   
   .grid-container > div {
-    
-    font-size: 30px;
     text-align: left;
-    padding: 20px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 400, 700;
-
+    padding: 40px;
   }
   
   .item1 {
-    padding: 40px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-ROW-start: 1;
     grid-ROW-end: 2;
     background-color: aliceblue;
   }
-  h2.titl1{ 
-    color: #2EB2AF;
+
+h2.titl1{ 
+  color: var(--Cyan);
+  margin-bottom: 20px;
 }
+
 h3.titl2{
-  color: #BFE03A;
+  color: var(--Bright-Yellow);
+  margin-bottom: 15px;
 }
+
 p.paragraph1{
-  color: #C0C3C6;
+  color:var(--Grayish-Blue);
+  line-height: 28px;
 }
   .item2 {
     padding: 40px;
@@ -42,14 +81,17 @@ p.paragraph1{
     background-color: #2EB2AF;
 }
 h3.titl11{
-  color: #F0FEFC;
+  color: var(--Light-Gray);
+  margin-bottom: 20px;
 }
 span.Signn{
-  color: #F0FEFC;
-
+  color: var(--Light-Gray);
+  font-size: 25px;
+  
 }
 span.timme{
-  color: #68D2D3;
+  color: #7de4e6;
+  margin-left: 10px;
 }
 p.paragraph2{
   color: #F0FEFC;
@@ -57,7 +99,12 @@ p.paragraph2{
 button{
   background-color: #BFE03A;
   color: #F0FEFC;
- 
+  padding-inline: 40%;
+  padding-block: 17px;
+  border-radius: 8px;
+  border: 2.5px solid var(--Bright-Yellow);
+  margin-top: 40px;
+  box-shadow: -2px 10px 6px hsl(179, 61%, 39%);
 }
   .item3 {
     padding: 40px;
@@ -68,9 +115,12 @@ button{
     background-color:#4ABEBF;
   } 
   h3.titl111{
-    color: #F0FEFC;
-
+    color: var(--Light-Gray);
+    margin-bottom: 25px;
   }
   p.paragraph3{
-    color: #8BDCDC;
+    color: var(--Light-Gray);
+    font-size: 13px;
+    max-width: 180px;
+    line-height: 23px;
   }
